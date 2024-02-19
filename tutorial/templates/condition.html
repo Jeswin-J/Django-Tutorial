@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+
+{% block mainContent %}
+    {% if python %}
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Hello Coders Forum!</h5>
+                This is the course module for <b>PYTHON</b>
+            </div>
+        </div>
+    {% else %}
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Hello Coders Forum!</h5>
+                This is the course module for <b>JAVA</b>
+            </div>
+        </div>
+    {% endif %}
+{% endblock mainContent %}
